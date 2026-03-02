@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C031A22C2F00344A00CBFB0B /* MetaCodable in Frameworks */ = {isa = PBXBuildFile; productRef = C031A22B2F00344A00CBFB0B /* MetaCodable */; };
+		C06A189E2F005E7D00F0DE6B /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = C06A189D2F005E7D00F0DE6B /* Dependencies */; };
+		C06A18A02F005E7D00F0DE6B /* DependenciesMacros in Frameworks */ = {isa = PBXBuildFile; productRef = C06A189F2F005E7D00F0DE6B /* DependenciesMacros */; };
+		C0778B0F2F007E43002AB243 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = C0778B0E2F007E43002AB243 /* SwiftUIIntrospect */; };
+		C077E5952F001BE600B93C65 /* TinyStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C077E5942F001BE600B93C65 /* TinyStorage */; };
+		C077E5982F001C0600B93C65 /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = C077E5972F001C0600B93C65 /* Atlantis */; };
+		C077E5C62F00309600B93C65 /* ButtonKit in Frameworks */ = {isa = PBXBuildFile; productRef = C077E5C52F00309600B93C65 /* ButtonKit */; };
+		C077E5CB2F0031EE00B93C65 /* HelperCoders in Frameworks */ = {isa = PBXBuildFile; productRef = C077E5CA2F0031EE00B93C65 /* HelperCoders */; };
+		C07DF0A72F552B40002DF1E4 /* NavigationKit in Frameworks */ = {isa = PBXBuildFile; productRef = C07DF0A62F552B40002DF1E4 /* NavigationKit */; };
+		C0D548192F05FC7800E5436B /* ObfuscateMacro in Frameworks */ = {isa = PBXBuildFile; productRef = C0D548182F05FC7800E5436B /* ObfuscateMacro */; };
+		C0EDDC0B2F00698900C2F502 /* Pulse in Frameworks */ = {isa = PBXBuildFile; productRef = C0EDDC0A2F00698900C2F502 /* Pulse */; };
+		C0EDDC0D2F00698900C2F502 /* PulseProxy in Frameworks */ = {isa = PBXBuildFile; productRef = C0EDDC0C2F00698900C2F502 /* PulseProxy */; };
+		C0EDDC0F2F00698900C2F502 /* PulseUI in Frameworks */ = {isa = PBXBuildFile; productRef = C0EDDC0E2F00698900C2F502 /* PulseUI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C0F105BE2F001887008375FE /* PayphoneGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayphoneGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C077E5BE2F002C4200B93C65 /* Exceptions for "src" folder in "PayphoneGo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C0F105BD2F001887008375FE /* PayphoneGo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C0F105C02F001887008375FE /* src */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C077E5BE2F002C4200B93C65 /* Exceptions for "src" folder in "PayphoneGo" target */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0F105BB2F001887008375FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0EDDC0B2F00698900C2F502 /* Pulse in Frameworks */,
+				C07DF0A72F552B40002DF1E4 /* NavigationKit in Frameworks */,
+				C077E5952F001BE600B93C65 /* TinyStorage in Frameworks */,
+				C077E5CB2F0031EE00B93C65 /* HelperCoders in Frameworks */,
+				C06A18A02F005E7D00F0DE6B /* DependenciesMacros in Frameworks */,
+				C06A189E2F005E7D00F0DE6B /* Dependencies in Frameworks */,
+				C077E5982F001C0600B93C65 /* Atlantis in Frameworks */,
+				C0778B0F2F007E43002AB243 /* SwiftUIIntrospect in Frameworks */,
+				C031A22C2F00344A00CBFB0B /* MetaCodable in Frameworks */,
+				C0EDDC0F2F00698900C2F502 /* PulseUI in Frameworks */,
+				C0D548192F05FC7800E5436B /* ObfuscateMacro in Frameworks */,
+				C077E5C62F00309600B93C65 /* ButtonKit in Frameworks */,
+				C0EDDC0D2F00698900C2F502 /* PulseProxy in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C031A22A2F00344A00CBFB0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0F105B52F001887008375FE = {
+			isa = PBXGroup;
+			children = (
+				C0F105C02F001887008375FE /* src */,
+				C031A22A2F00344A00CBFB0B /* Frameworks */,
+				C0F105BF2F001887008375FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C0F105BF2F001887008375FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0F105BE2F001887008375FE /* PayphoneGo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0F105BD2F001887008375FE /* PayphoneGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F105C92F001888008375FE /* Build configuration list for PBXNativeTarget "PayphoneGo" */;
+			buildPhases = (
+				C0F105BA2F001887008375FE /* Sources */,
+				C0F105BB2F001887008375FE /* Frameworks */,
+				C0F105BC2F001887008375FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C0F105C02F001887008375FE /* src */,
+			);
+			name = PayphoneGo;
+			packageProductDependencies = (
+				C077E5942F001BE600B93C65 /* TinyStorage */,
+				C077E5972F001C0600B93C65 /* Atlantis */,
+				C077E5C52F00309600B93C65 /* ButtonKit */,
+				C077E5CA2F0031EE00B93C65 /* HelperCoders */,
+				C031A22B2F00344A00CBFB0B /* MetaCodable */,
+				C06A189D2F005E7D00F0DE6B /* Dependencies */,
+				C06A189F2F005E7D00F0DE6B /* DependenciesMacros */,
+				C0EDDC0A2F00698900C2F502 /* Pulse */,
+				C0EDDC0C2F00698900C2F502 /* PulseProxy */,
+				C0EDDC0E2F00698900C2F502 /* PulseUI */,
+				C0778B0E2F007E43002AB243 /* SwiftUIIntrospect */,
+				C0D548182F05FC7800E5436B /* ObfuscateMacro */,
+				C07DF0A62F552B40002DF1E4 /* NavigationKit */,
+			);
+			productName = PayphoneGo;
+			productReference = C0F105BE2F001887008375FE /* PayphoneGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0F105B62F001887008375FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					C0F105BD2F001887008375FE = {
+						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
+					};
+				};
+			};
+			buildConfigurationList = C0F105B92F001887008375FE /* Build configuration list for PBXProject "PayphoneGo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0F105B52F001887008375FE;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C077E5932F001BE600B93C65 /* XCRemoteSwiftPackageReference "TinyStorage" */,
+				C077E5962F001C0600B93C65 /* XCRemoteSwiftPackageReference "atlantis" */,
+				C077E5C42F00309600B93C65 /* XCRemoteSwiftPackageReference "ButtonKit" */,
+				C077E5C92F0031EE00B93C65 /* XCRemoteSwiftPackageReference "MetaCodable" */,
+				C06A189C2F005E7D00F0DE6B /* XCRemoteSwiftPackageReference "swift-dependencies" */,
+				C0EDDC092F00698900C2F502 /* XCRemoteSwiftPackageReference "Pulse" */,
+				C0778B0D2F007E43002AB243 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+				C0D548172F05FC7800E5436B /* XCRemoteSwiftPackageReference "ObfuscateMacro" */,
+				C0D151A12F5529AB009B3388 /* XCRemoteSwiftPackageReference "NavigationKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = C0F105BF2F001887008375FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0F105BD2F001887008375FE /* PayphoneGo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0F105BC2F001887008375FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0F105BA2F001887008375FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C0F105C72F001888008375FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LR4RJT6586;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C0F105C82F001888008375FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LR4RJT6586;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C0F105CA2F001888008375FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LR4RJT6586;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = src/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = build.miguel.PayphoneGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match Development build.miguel.PayphoneGo";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "src/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C0F105CB2F001888008375FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LR4RJT6586;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = src/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = build.miguel.PayphoneGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "match AppStore build.miguel.PayphoneGo";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "src/Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0F105B92F001887008375FE /* Build configuration list for PBXProject "PayphoneGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F105C72F001888008375FE /* Debug */,
+				C0F105C82F001888008375FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F105C92F001888008375FE /* Build configuration list for PBXNativeTarget "PayphoneGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0F105CA2F001888008375FE /* Debug */,
+				C0F105CB2F001888008375FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C06A189C2F005E7D00F0DE6B /* XCRemoteSwiftPackageReference "swift-dependencies" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-dependencies.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
+		C0778B0D2F007E43002AB243 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 26.0.0;
+			};
+		};
+		C077E5932F001BE600B93C65 /* XCRemoteSwiftPackageReference "TinyStorage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/christianselig/TinyStorage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+		C077E5962F001C0600B93C65 /* XCRemoteSwiftPackageReference "atlantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ProxymanApp/atlantis.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
+		C077E5C42F00309600B93C65 /* XCRemoteSwiftPackageReference "ButtonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dean151/ButtonKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.1;
+			};
+		};
+		C077E5C92F0031EE00B93C65 /* XCRemoteSwiftPackageReference "MetaCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyLab/MetaCodable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		C0D151A12F5529AB009B3388 /* XCRemoteSwiftPackageReference "NavigationKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/m1guelpf/NavigationKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		C0D548172F05FC7800E5436B /* XCRemoteSwiftPackageReference "ObfuscateMacro" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/p-x9/ObfuscateMacro.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.0;
+			};
+		};
+		C0EDDC092F00698900C2F502 /* XCRemoteSwiftPackageReference "Pulse" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Pulse.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C031A22B2F00344A00CBFB0B /* MetaCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C077E5C92F0031EE00B93C65 /* XCRemoteSwiftPackageReference "MetaCodable" */;
+			productName = MetaCodable;
+		};
+		C06A189D2F005E7D00F0DE6B /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C06A189C2F005E7D00F0DE6B /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = Dependencies;
+		};
+		C06A189F2F005E7D00F0DE6B /* DependenciesMacros */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C06A189C2F005E7D00F0DE6B /* XCRemoteSwiftPackageReference "swift-dependencies" */;
+			productName = DependenciesMacros;
+		};
+		C0778B0E2F007E43002AB243 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0778B0D2F007E43002AB243 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+		C077E5942F001BE600B93C65 /* TinyStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C077E5932F001BE600B93C65 /* XCRemoteSwiftPackageReference "TinyStorage" */;
+			productName = TinyStorage;
+		};
+		C077E5972F001C0600B93C65 /* Atlantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C077E5962F001C0600B93C65 /* XCRemoteSwiftPackageReference "atlantis" */;
+			productName = Atlantis;
+		};
+		C077E5C52F00309600B93C65 /* ButtonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C077E5C42F00309600B93C65 /* XCRemoteSwiftPackageReference "ButtonKit" */;
+			productName = ButtonKit;
+		};
+		C077E5CA2F0031EE00B93C65 /* HelperCoders */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C077E5C92F0031EE00B93C65 /* XCRemoteSwiftPackageReference "MetaCodable" */;
+			productName = HelperCoders;
+		};
+		C07DF0A62F552B40002DF1E4 /* NavigationKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0D151A12F5529AB009B3388 /* XCRemoteSwiftPackageReference "NavigationKit" */;
+			productName = NavigationKit;
+		};
+		C0D548182F05FC7800E5436B /* ObfuscateMacro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0D548172F05FC7800E5436B /* XCRemoteSwiftPackageReference "ObfuscateMacro" */;
+			productName = ObfuscateMacro;
+		};
+		C0EDDC0A2F00698900C2F502 /* Pulse */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0EDDC092F00698900C2F502 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = Pulse;
+		};
+		C0EDDC0C2F00698900C2F502 /* PulseProxy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0EDDC092F00698900C2F502 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseProxy;
+		};
+		C0EDDC0E2F00698900C2F502 /* PulseUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0EDDC092F00698900C2F502 /* XCRemoteSwiftPackageReference "Pulse" */;
+			productName = PulseUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C0F105B62F001887008375FE /* Project object */;
+}
