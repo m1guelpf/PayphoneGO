@@ -5,7 +5,6 @@ import Foundation
 enum Destination: NavigationDestination {
 	enum Tabs: String, TabRepresentable {
 		case home
-		case leaderboard
 	}
 
 	enum Pages: PageRepresentable {
@@ -19,12 +18,12 @@ enum Destination: NavigationDestination {
 	}
 
 	enum Sheets: Identifiable, SheetRepresentable {
+		case leaderboard
 		case browser(url: URL)
-		case phoneDetail(phone: Phone)
 
 		var id: String {
 			switch self {
-				case let .phoneDetail(phone): "phone-\(phone.id)"
+				case .leaderboard: "leaderboard"
 				case let .browser(url): "browser-\(url.absoluteString)"
 			}
 		}
@@ -38,8 +37,8 @@ enum Destination: NavigationDestination {
 
 		@ViewBuilder var content: some View {
 			switch self {
+				case .leaderboard: LeaderboardSheet()
 				case let .browser(url): BrowserSheet(url: url)
-				case let .phoneDetail(phone): PhoneDetailSheet(phone: phone)
 			}
 		}
 	}

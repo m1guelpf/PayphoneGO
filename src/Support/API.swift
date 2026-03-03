@@ -2,6 +2,7 @@ import SwiftUI
 import Foundation
 import MetaCodable
 import Dependencies
+import HelperCoders
 
 @MainActor
 struct API: Sendable {
@@ -31,6 +32,10 @@ extension API {
 	func phone(id: Int) async throws -> PhoneDetails {
 		return try await get(baseURL.appending(path: "phone/\(id)"), as: PhoneDetails.self)
 	}
+
+	func leaderboard() async throws -> [LeaderboardEntry] {
+		return try await get(baseURL.appending(path: "leaderboard"), as: [LeaderboardEntry].self)
+	}
 }
 
 // API Types
@@ -43,6 +48,12 @@ extension API {
 		var payphone: PhoneData
 		var claims: [Claim]
 		var totalClaims: Int
+	}
+
+	@Codable @CodingKeys(.snake_case) struct LeaderboardEntry: Equatable, Hashable {
+		var displayName: String
+		@CodedBy(ValueCoder<Int>()) var points: Int
+		var claims: Int
 	}
 }
 

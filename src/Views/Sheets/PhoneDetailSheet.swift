@@ -126,7 +126,7 @@ struct PhoneDetailSheet: View {
 	VStack {}
 		.sheet(isPresented: $showing) {
 			NavigationStack {
-				Destination.Sheets.phoneDetail(phone: .sampleData).content
+				PhoneDetailSheet(phone: .sampleData)
 			}
 			.presentationDetents([.medium, .large])
 		}

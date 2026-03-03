@@ -44,6 +44,14 @@ struct MainScreen: View {
 					position = .userLocation(fallback: position)
 				}
 			}
+			.toolbar {
+				ToolbarItem {
+					NavigationButton(sheet: .leaderboard) {
+						Label("Leaderboard", systemImage: "trophy")
+
+					}
+				}
+			}
 			.overlay(alignment: .bottom) {
 				if selectedPhoneId == nil {
 					Button(action: navigateToClosest) {
