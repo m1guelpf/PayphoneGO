@@ -11,6 +11,14 @@ struct PhoneDetailSheet: View {
 	@Environment(\.selectedPhone) var selectedPhone
 	@Environment(LocationManager.self) var locationManager
 
+	var distanceUnit: UnitLength {
+		switch Locale.current.measurementSystem {
+			case .metric: .meters
+			case .us, .uk: .miles
+			default: .miles
+		}
+	}
+
 	var body: some View {
 		List {
 			if phone.claimCount == 0 {
@@ -71,7 +79,7 @@ struct PhoneDetailSheet: View {
 						.font(.headline.weight(.medium).smallCaps())
 
 					if let userLocation = locationManager.location {
-						let distance = Measurement(value: phone.location.distance(from: userLocation), unit: UnitLength.meters)
+						let distance = Measurement(value: phone.location.distance(from: userLocation), unit: distanceUnit)
 
 						Text(distance, format: .measurement(width: .abbreviated))
 							.font(.caption2)
