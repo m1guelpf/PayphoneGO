@@ -1,6 +1,7 @@
 import MapKit
 import SwiftUI
 import ButtonKit
+import Algorithms
 import TinyStorage
 import Dependencies
 
@@ -81,7 +82,7 @@ struct MainScreen: View {
 		) {
 			UserAnnotation()
 
-			if let phones {
+			if let phones = phones?.uniqued(on: \.rawAddress) {
 				ForEach(phones) { phone in
 					Marker(phone.rawAddress, systemImage: "teletype", coordinate: phone.coordinate)
 						.tag(phone.id)
@@ -94,16 +95,6 @@ struct MainScreen: View {
 			if locationManager.location != nil {
 				MapUserLocationButton()
 			}
-
-			Picker(selection: .constant(1), content: {
-				Text("All")
-					.tag(1)
-				Text("Unclaimed")
-					.tag(2)
-			}, label: {
-				Image(systemName: "line.3.horizontal.decrease.circle")
-					.font(.title2)
-			})
 
 			MapCompass()
 			MapScaleView()
