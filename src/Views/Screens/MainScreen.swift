@@ -51,6 +51,15 @@ struct MainScreen: View {
 
 					}
 				}
+
+				ToolbarSpacer(.fixed)
+
+				ToolbarItem {
+					NavigationButton(sheet: .settings) {
+						Label("Settings", systemImage: "gear")
+
+					}
+				}
 			}
 			.overlay(alignment: .bottom) {
 				if selectedPhoneId == nil {

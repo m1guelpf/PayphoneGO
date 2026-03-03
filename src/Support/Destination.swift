@@ -18,11 +18,13 @@ enum Destination: NavigationDestination {
 	}
 
 	enum Sheets: Identifiable, SheetRepresentable {
+		case settings
 		case leaderboard
 		case browser(url: URL)
 
 		var id: String {
 			switch self {
+				case .settings: "settings"
 				case .leaderboard: "leaderboard"
 				case let .browser(url): "browser-\(url.absoluteString)"
 			}
@@ -30,6 +32,7 @@ enum Destination: NavigationDestination {
 
 		var detents: Set<PresentationDetent> {
 			switch self {
+				case .settings: [.height(200)]
 				case .browser: [.large]
 				default: [.medium, .large]
 			}
@@ -37,6 +40,7 @@ enum Destination: NavigationDestination {
 
 		@ViewBuilder var content: some View {
 			switch self {
+				case .settings: SettingsSheet()
 				case .leaderboard: LeaderboardSheet()
 				case let .browser(url): BrowserSheet(url: url)
 			}

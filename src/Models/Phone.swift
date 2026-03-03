@@ -1,6 +1,7 @@
 import MapKit
 import Foundation
 import MetaCodable
+import TinyStorage
 import HelperCoders
 
 @Codable @CodingKeys(.snake_case) struct Phone: Identifiable, Equatable, Hashable, Sendable {
@@ -27,8 +28,10 @@ import HelperCoders
 	}
 
 	func navigate() {
+		let transportMethod = TinyStorage.retrieveWithFallback(type: TransportMethod.self, forKey: .transportMethod, fallback: .walking)
+
 		MKMapItem(location: location, address: nil).openInMaps(launchOptions: [
-			MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking,
+			MKLaunchOptionsDirectionsModeKey: transportMethod.toPreferenceKey,
 		])
 	}
 }

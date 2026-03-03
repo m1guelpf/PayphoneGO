@@ -5,6 +5,7 @@ extension TinyStorage {
 	enum Keys: String, TinyStorageKey {
 		case user
 		case cachedPhones
+		case transportMethod
 	}
 
 	fileprivate static let shared = TinyStorage(insideDirectory: URL.documentsDirectory, name: "prefs")
@@ -13,12 +14,10 @@ extension TinyStorage {
 		shared.retrieve(type: T.self, forKey: key)
 	}
 
-	static func retrieveWithFallback<T: Codable>(type: T.Type, forKey key: Keys, fallback: () -> T?) -> T? {
+	static func retrieveWithFallback<T: Codable>(type: T.Type, forKey key: Keys, fallback: @autoclosure () -> T) -> T {
 		if let value = retrieve(type: type, forKey: key) { return value }
-		guard let fallback = fallback() else { return nil }
 
-		store(fallback, forKey: key)
-		return fallback
+		return tap(fallback()) { store($0, forKey: key) }
 	}
 
 	static func store<T: Codable>(_ value: T?, forKey key: Keys) {
