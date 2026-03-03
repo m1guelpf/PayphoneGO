@@ -27,25 +27,18 @@ struct PhoneDetailSheet: View {
 					.listRowSeparator(.hidden)
 			} else if let details {
 				ForEach(details.claims.enumerated(), id: \.element.claimOrder) { i, claim in
-					VStack(alignment: .leading, spacing: 6) {
-						Text(claim.displayName)
-							.font(.headline.weight(.medium))
-
-						Text(claim.claimedAt, format: .dateTime.year().month().day().hour().minute())
-							.font(.caption)
-							.foregroundStyle(.secondary)
-					}
-					.listRowInsets(.horizontal, 0)
-					.listRowSeparator(i == 0 ? .hidden : .visible, edges: .top)
-					.overlay(alignment: .topLeading) {
-						if i == 0 {
-							Text("\(phone.claimCount) Claim\(phone.claimCount == 1 ? "" : "s")")
-								.font(.headline.weight(.medium).smallCaps())
-								.foregroundStyle(.secondary)
-								.frame(maxWidth: .infinity, alignment: .leading)
-								.offset(y: -25)
+					ClaimRow(claim: claim)
+						.listRowInsets(.horizontal, 0)
+						.listRowSeparator(i == 0 ? .hidden : .visible, edges: .top)
+						.overlay(alignment: .topLeading) {
+							if i == 0 {
+								Text("\(phone.claimCount) Claim\(phone.claimCount == 1 ? "" : "s")")
+									.font(.headline.weight(.medium).smallCaps())
+									.foregroundStyle(.secondary)
+									.frame(maxWidth: .infinity, alignment: .leading)
+									.offset(y: -25)
+							}
 						}
-					}
 				}
 
 			} else {
